@@ -1,2 +1,2 @@
 import timeit
-print(timeit.timeit("10&1")
+print(timeit.timeit("10&1"))
