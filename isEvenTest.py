@@ -1,6 +1,5 @@
 def isEven(value):
     return(value%2==0)
-x=-10.000000000000001
-y=-10.0000000000000001
+x=-10.01
+print(f"{x/2:.30f}")
 print(isEven(x))
-print(isEven(y))
