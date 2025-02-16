@@ -13,8 +13,8 @@ def main():
             return(M)
         LeftM=M[:len(M)//2]
         RightM=M[(len(M)//2):]
-        print(LeftM)
-        print(RightM)       
+        #print(LeftM)
+        #print(RightM)       
         return(AddMass(Merge(LeftM), Merge(RightM)))
 
     def AddMass(LM,RM):
@@ -28,16 +28,16 @@ def main():
                 del RM[0]                
         if len(LM)==0:
             ResM.append(RM[0])
-            print(ResM)
+            #print(ResM)
         else:
             ResM.append(LM[0])
-            print(ResM)
+            #print(ResM)
         
         return (ResM)
 
     mass=newMass()
     print(mass)
-    
+    print("Done")
     print(Merge(mass))
 
 main()
