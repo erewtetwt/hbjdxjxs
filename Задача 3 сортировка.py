@@ -19,25 +19,24 @@ def main():
 
     def AddMass(LM,RM):
         ResM=[]        
-        while len(LM)!=0 and len(RM)!=0:
+        while (len(LM)and len(RM))!=0:
             if LM[0]<RM[0]:
-                ResM.append(LM[0])
-                del LM[0]
+                ResM.append(LM[0])                
+                del LM[0]                
             else:
-                ResM.append(RM[0])
+                ResM.append(RM[0])                
                 del RM[0]                
         if len(LM)==0:
-            ResM.append(RM[0])
+            ResM=ResM+RM            
             #print(ResM)
         else:
-            ResM.append(LM[0])
-            #print(ResM)
-        
+            ResM=ResM+LM
+            #print(ResM)        
         return (ResM)
 
     mass=newMass()
     print(mass)
-    print("Done")
+    print("Done:")
     print(Merge(mass))
 
 main()
